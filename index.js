@@ -51,6 +51,7 @@ const runAutoUpdate = async () => {
       }
 
       //write new dependency version into package.json
+      // JSON.stringify(parsedPackage, null, 2) makes json more pretty and readable
       parsedPackage.dependencies[PACKAGE_NAME] = PACKAGE_NEW_VERSION;
       fs.writeFileSync(
         `${SLUG}/package.json`,
