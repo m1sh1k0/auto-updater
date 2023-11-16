@@ -24,6 +24,7 @@ const runAutoUpdate = async () => {
     });
 
     //clone repo
+    //TODO: maybe find solution for not pulling entire project, just single package.json
     await execCommand(
       createGitRemoteCommand("clone", WORKSPACE, SLUG, ACCESS_TOKEN)
     );
