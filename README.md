@@ -1,5 +1,5 @@
 # Package version  changer
-This script is used to change version of given repository for version
+This script is used to change version of package dependency in package.json of given repository
 This script is designed for use in BitBucket repositories
 
 ## Before run
