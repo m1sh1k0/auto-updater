@@ -1,6 +1,6 @@
 # Package version  changer
 This script is used to change version of given repository for version
-This script is designed for using in BitBucket repositories
+This script is designed for use in BitBucket repositories
 
 ## Before run
 Specify those .env variables to run auto update
