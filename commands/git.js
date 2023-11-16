@@ -6,7 +6,7 @@ const create_branch = `git checkout -B ${branch_name}`;
 const commit_and_push = `git commit -m "dependency update" && git push --set-upstream origin ${branch_name}`;
 
 // Dependency bot name and email for commit and push
-export const set_bot__user_name =
+export const set_bot_user_name =
   "git config user.name l9waxxfgue3c3ce6g36mzinyfuyg48";
 
 export const set_bot_user_email =
@@ -35,7 +35,7 @@ export const commitAndPushChanges = async (
   await execCommandInDir(SLUG, "git add package.json");
   await execCommandInDir(
     SLUG,
-    `${set_bot__user_name} && ${set_bot_user_email}`
+    `${set_bot_user_name} && ${set_bot_user_email}`
   );
   await execCommandInDir(SLUG, commit_and_push);
 };
