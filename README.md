@@ -12,4 +12,4 @@ Which repo depends of this package?
 - SLUG
 - ACCESS_TOKEN
 
-After filling this info you can run you auto update
+After filling this info you can run auto update
