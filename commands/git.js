@@ -8,7 +8,7 @@ const commit_and_push = `git commit -m "dependency update" && git push --set-ups
 // Dependency bot name and email for commit and push
 export const set_bot__user_name =
   "git config user.name l9waxxfgue3c3ce6g36mzinyfuyg48";
-  
+
 export const set_bot_user_email =
   "git config user.email l9waxxfgue3c3ce6g36mzinyfuyg48@bots.bitbucket.org";
 
@@ -32,7 +32,6 @@ export const commitAndPushChanges = async (
   SLUG,
 ) => {
   await execCommandInDir(SLUG, create_branch);
-  await execCommandInDir(SLUG, "ls -la");
   await execCommandInDir(SLUG, "git add package.json");
   await execCommandInDir(
     SLUG,
