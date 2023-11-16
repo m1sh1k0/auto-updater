@@ -1,7 +1,7 @@
 # Package version  changer
 This script is used to change version of given repository for version
 ## Before run
-Specify those .env variable to run auto update
+Specify those .env variables to run auto update
 
  Which package to change? 
 - PACKAGE_NAME #Name of package you want to check
@@ -12,4 +12,4 @@ Which repo depends of this package?
 - SLUG #Client project name
 - ACCESS_TOKEN # Bit bucket access token
 
-After filling this info you can run auto update
+After filling this info you can run auto update by command ***npm start***
