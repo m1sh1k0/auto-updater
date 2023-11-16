@@ -1,0 +1,17 @@
+{
+  "name": "redocly-test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compare-versions": "^6.1.0",
+    "dotenv": "^16.3.1",
+    "read-pkg": "^9.0.1"
+  }
+}
