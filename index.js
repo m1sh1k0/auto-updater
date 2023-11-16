@@ -31,10 +31,11 @@ const runAutoUpdate = async () => {
     // parse package.json from cloned project
     const parsedPackage = await readPackage({ cwd: SLUG });
 
-    // check if version is newer
+    //get version of current version
     const current_dependency_version =
       parsedPackage?.dependencies[PACKAGE_NAME];
 
+      // check if version is newer
     if (current_dependency_version) {
       const isPackageVersionGraterThanExisting = compare(
         current_dependency_version,
@@ -56,6 +57,7 @@ const runAutoUpdate = async () => {
         JSON.stringify(parsedPackage, null, 2)
       );
 
+      //TODO: add handle of each operation to make error messages more informative
       await commitAndPushChanges(SLUG);
       await execCommand(
         createPullRequest(
