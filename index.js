@@ -72,6 +72,7 @@ const runAutoUpdate = async () => {
   } catch (error) {
     console.log("There is some error: ", error);
   } finally {
+    //removing cloned project after any scenario
     await execCommand(`rm -rf ${SLUG}`);
   }
 };
